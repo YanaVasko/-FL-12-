@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: static;
+    width: 100%;
+    background-color: #fff;
+}
+
+.menuBar {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    color: #777;
+}
+
+.nameOfSite {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+ul {
+    padding-left: 100px;
+}
+
+li {
+    text-align: right;
+    width: 20%;
+    display: inline-block;
+    list-style-type: none;
+    font-size: 19px;
+    padding-right: 45px;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+a:hover {
+    color: #bfba55;
+}
+
+.headerInformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 70px auto;
+    padding-top: 10%;
+    background-image: url('../img/home-bg.jpg');
+    filter: brightness(96%);
+    z-index: -1;
+}
+
+.headerInformation h1 {
+    color: #fff;
+    font-size: 4.2em;
+    margin: 0;
+    margin-top: -30px;
+}
+
+.headerInformation p {
+    color: #bfba55;
+
+}
+
+.headerInformation button {
+    margin-top: 2%;
+    text-transform: uppercase;
+    width: 11%;
+    height: 8%;
+    border-radius: 30px;
+    border: 1px solid rgb(63, 62, 62);
+    background-color: #FFF;
+}
+
+.blogSection {
+    width: 65%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.blogInformation {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    color: #777;
+}
+
+.blogImage {
+    display: block;
+    width: 100%;
+}
+
+.blogInformationFoto {
+    width: 13%;
+    height: 13%;
+    border-radius: 50%;
+}
+
+.textOfBlog {
+    font-size: 17px;
+    color: #777;
+}
+
+.readingMore {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 14px;
+    width: 180px;
+    height: 45px;
+    background-color: #FFF;
+    color: #777;
+    border-radius: 30px;
+    border: 1px solid #565655;
+}
+
+.blogSection hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #777;
+    opacity: 0.3;
+}
+
+footer {
+    display: flex;
+    margin-top: 8%;
+    align-items: center;
+    background-color: black;
+    height: 200px;
+}
+
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+    color: #777;
+}
+
+.footerContainer h2 {
+    font-size: 23px;
+    font-weight: 900;
+    color: #FFF;
+}
+
+.footerContainer p {
+    width: 350px;
+    font-size: 14px;
+}
