@@ -1,0 +1,418 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+.post-1 {
+  background: #B71757;
+}
+
+.post-2 {
+  background: #0D7E71;
+}
+
+.post-3 {
+  background: #b1660e;
+}
+
+.post-4 {
+  background: #d12767;
+}
+
+.post-5 {
+  background: #2d95bb;
+}
+
+body {
+  background: #0b192f;
+}
+
+.gridContainer {
+  display: grid;
+  width: 95%;
+  max-width: 1400px;
+  margin: auto auto;
+  grid-template-areas: "header header"
+    "headerPostSection headerPostSection"
+    "main aside"
+    "footer footer";
+  grid-template-columns: 1fr 24%;
+  grid-gap: 2rem;
+}
+
+header {
+  grid-area: header;
+  background: #162b4d;
+}
+
+.logo {
+  display: inline-block;
+  width: 20%;
+  padding-left: 30px;
+  font-size: 2em;
+  font-weight: 200;
+  position: relative;
+  top: 25%;
+  color: #fff;
+}
+
+.logo span {
+  color: #B71757;
+}
+
+.headerNavigation {
+  float: right;
+  text-align: right;
+  font-size: 1em;
+  margin-right: 30px;
+}
+
+.headerNavigation ul {
+  list-style-type: none;
+  margin: 0;
+  height: 100%;
+
+}
+
+.headerNavigation ul li {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.headerNavigation ul li a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 66px;
+}
+
+.headerNavigation ul li:hover {
+  background-color: #1f52a4;
+  cursor: pointer;
+}
+
+.headerPostSection {
+  grid-area: headerPostSection;
+  width: 100%;
+  margin-top: 1.5%;
+  min-height: 435px;
+  background: url(../img/post0.jpg) center;
+  background-size: cover;
+  color: #fff;
+}
+
+.headerPost {
+  padding: 22% 2% 4% 2%;
+  width: 70%;
+  color: #fff;
+}
+
+.nameOfPost {
+  font-size: 55px;
+  font-weight: 200;
+}
+
+.descriptionOfPost {
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.menuBar {
+  display: none;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menuBar>span,
+.menuBar>span::before,
+.menuBar>span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.menuBar>span::before {
+  content: '';
+  top: -8px;
+}
+
+.menuBar>span::after {
+  content: '';
+  top: 8px;
+}
+
+.footerCopyright {
+  grid-area: footer;
+  background: #162b4d;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  font-weight: 200;
+  font-size: 0.8em;
+}
+
+.copyright {
+  width: 40%;
+  padding-left: 30px;
+}
+
+.designedWrap {
+  margin-left: 60%;
+  width: 20%;
+}
+
+.designed {
+  text-align: left;
+}
+
+.main {
+  grid-area: main;
+}
+
+.main> :nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.postsItem {
+  display: flex;
+}
+
+.postsItemImg,
+.postsItemContent {
+  position: relative;
+  width: 50%;
+}
+
+.postsItemImg:hover::after,
+.postsItemContent:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(183, 23, 87, 0.4);
+  cursor: pointer;
+}
+
+.img-1 {
+  background: url("../img/post1.jpg");
+}
+
+.img-2 {
+  background: url("../img/post2.jpg");
+}
+
+.img-3 {
+  background: url("../img/post3.jpg");
+}
+
+.img-4 {
+  background: url("../img/post4.jpg");
+}
+
+.postsItemImg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.main> :nth-child(even) .postsItemContent {
+  flex-direction: row-reverse;
+}
+
+.main> :nth-child(even) .postsItemText {
+  text-align: right;
+
+}
+
+.main> :nth-child(even) .postHeading {
+  padding-left: 3rem;
+  padding-right: 0rem;
+
+}
+
+.postsItemContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem;
+}
+
+.postHeading {
+  margin-bottom: 10%;
+  font-size: 4em;
+  color: #fff;
+  font-weight: 200;
+  padding-left: 0rem;
+  padding-right: 3rem;
+}
+
+.postsItemText {
+  color: #fff;
+  font-weight: 200;
+  font-size: 0.7rem;
+  opacity: 0.9;
+
+}
+
+.postsItemText p {
+  line-height: 2;
+}
+
+.postsItemDate {
+  color: #fff;
+  font-weight: 100;
+  font-size: 3em;
+  margin: -2rem -2.5rem;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.postsItemDate span {
+  color: #fff;
+  font-size: 0.5em;
+  display: block;
+}
+
+.postFullWidth {
+  width: 100%;  
+}
+
+.asideNews {
+  grid-area: aside;
+}
+
+.newsHeading {
+  margin-bottom: 10%;
+  font-size: 1.5em;
+  color: #000;
+  font-weight: 200;
+}
+
+.newsItem {
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+
+.newsItem img {
+  width: 100%;
+}
+
+.newsItemContent {
+  padding: 2rem;
+
+}
+
+.newsItemText {
+  color: #000;
+  font-weight: 200;
+  font-size: 0.7rem;
+  opacity: 0.9;
+  line-height: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+
+  .headerNavigation {
+    display: none;
+  }
+
+  .menuBar {
+    display: flex;
+    position: relative;
+    left: 50%;
+    margin-top: 10px;
+  }
+
+  .logo {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footerCopyright {
+    display: block;
+    text-align: center;
+
+  }
+
+  .copyright,
+  .designedWrap,
+  .designed {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .designed {
+    text-align: center;
+  }
+
+  .postsItem,
+  .postsItemContent,
+  .main> :nth-child(even),
+  .main> :nth-child(even) .postsItemContent {
+    flex-direction: column;
+  }
+
+  .postsItemText,
+  .main> :nth-child(even) .postsItemText {
+    text-align: left;
+  }
+
+  .main> :nth-child(even) .postHeading {
+    padding-left: 0rem;
+
+  }
+
+  .postsItemContent,
+  .postsItemImg {
+    width: 100%;
+  }
+
+  .postsItem {
+    position: relative;
+    height: 100%;
+  }
+
+  .postsItemImg {
+    height: 210px;
+  }
+
+  .postsItemDate {
+    margin-top: 2rem
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .asideNews {
+    display: none;
+  }
+
+  .gridContainer {
+    grid-template-areas: "header"
+                         "headerPostSection"
+                         "main"
+                         "footer";
+    grid-template-columns: 1fr;
+
+  }
+}
