@@ -1,0 +1,13 @@
+#root div {
+  padding-left: 18px;
+  line-height: 25px;
+}
+
+.highlight:hover {
+  background-color: #d6d1d1;
+  cursor: pointer;
+}
+
+i {
+  float: left;
+}
